@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="community.css">
+
+  <!-- <link rel="stylesheet" href="css/responsive.css" /> -->
+  <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      />
+      <link rel="stylesheet" href="css/style.css" />
+      <!-- <link rel="stylesheet" href="css/responsive.css" /> -->
+      <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="img/apple-touch-icon.png"
+      />
+      <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="img/favicon-32x32.png"
+      />
+      <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="img/favicon-16x16.png"
+      />
+      <link rel="manifest" href="/site.webmanifest" />
+
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+    <title>Community Page</title>
+</head>
+<body>
+
+    <!-- Navbar navbar-placeholder -->
+   <!--navbar-->
+   <nav class="navbar glass" style="height: 70px">
+    <span
+        ><a href="#home" style="display: flex; align-items: center"
+            ><img
+                class="img2"
+                src="./img/mountain.png"
+                width="40"
+                style="margin: -25px -10px -25px -20px"
+            />
+            <h1 class="logo">&nbsp;Raksha</h1></a
+        ></span
+    >
+    <ul class="nav-links">
+        <li>
+            <a href="../home/index.html" id="pri" class="cir_border">Home</a>
+        </li>
+        <!-- <li><a href="../contact/contact.html" id="sec" class="cir_border">Contact</a></li> -->
+        <li>
+            <a href="../about/about.html" id="quad" class="cir_border">About</a>
+        </li>
+        <li><a href="../navigation/navigation.html" id="quint" class="cir_border">Navigation</a></li>
+        <li>
+            <a href="../community/community.html" id="tri" class="active cir_border">Community</a>
+        </li>
+        <li>
+            <a href="../forum/forum.html" id="hept" class="cir_border">forum</a>
+        </li>
+        <li>
+            <div>
+                <input
+                    type="checkbox"
+                    class="checkbox dark"
+                    id="checkbox"
+                />
+                <label for="checkbox" class="label">
+                    <i class="fa fa-moon-o"></i>
+                    <i class="fa fa-sun-o"></i>
+                    <div class="ball"></div>
+                </label>
+            </div>
+        </li>
+    </ul>
+    <img src="./img/menu-btn.png" alt="" class="menu-btn" />
+</nav>
+<!--navbar-->
+
+    <header>
+        <h1>Welcome to the Women's Safety Community</h1>
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Search for a city">
+            <div class="dropdown">
+                <button class="dropdown-btn">Select a City</button>
+                <ul class="dropdown-content">
+                    <li>New York</li>
+                    <li>Los Angeles</li>
+                    <li>Chicago</li>
+                    <li>Miami</li>
+                    <li>San Francisco</li>
+                    <!-- Add more cities as needed -->
+                </ul>
+            </div>
+            <button id="search-button">Search</button>
+        </div>
+    </header>
+    
+    <main>
+        
+        <header>
+            <h1>Your Profile</h1>
+        </header>
+        <main>
+            <section id="profile-info">
+                <div id="user-details">
+                    <div id="profile-picture">
+                        <img src="profileimg1.jpg" alt="Your Profile Picture">
+                    </div>
+                    <div id="user-info">
+                        <h2>Username</h2>
+                        <p>Email: sanika9@gmail.com</p>
+                        <p>Location: Pune, India</p>
+                        <p>Member Since: January 1, 2023</p>
+                        <button id="edit-profile-button">Edit Profile</button>
+                    </div>
+                </div>
+            </section>
+            <section id="profile-description">
+                <h2>About Me</h2>
+                <p>
+                    
+I'm a passionate female computer engineering student, on a relentless quest to decode the digital realm's mysteries. With a deep fascination for circuits and algorithms, I thrive on solving complex problems and designing innovative solutions. In a world where diversity is key, I'm breaking stereotypes and paving the way for more women to join the tech industry. As a future engineer, I'm dedicated to bridging the gender gap and creating a more inclusive, tech-savvy world. Join me on this exhilarating journey of code, circuits, and creativity!
+                </p>
+            </section>
+            <section id="interests">
+                <h2>Interests</h2>
+                <ul>
+                    <li>Outdoor Activities</li>
+                    <li>Reading</li>
+                    <li>Travel</li>
+                </ul>
+            </section>
+            
+            <section id="social-links">
+                <h2>Social Links</h2>
+                <ul>
+                    <li><a href="https://twitter.com/userprofile" target="_blank">Twitter</a></li>
+                    <li><a href="https://www.linkedin.com/in/userprofile" target="_blank">LinkedIn</a></li>
+                    <li><a href="https://www.instagram.com/userprofile" target="_blank">Instagram</a></li>
+                </ul>
+            </section>
+        </main>
+        
+        <section id="ask-expert">
+            <h2>Ask the Expert</h2>
+            <form id="question-form">
+                <label for="question">Your Question:</label>
+                <textarea id="question" placeholder="Ask your question" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+            <div id="expert-response">
+                <h3>Expert's Responses:</h3>
+                <div id="response-container">
+                    <p id="response"></p>
+                </div>
+                <div id="response-navigation">
+                    <button id="prev-response" disabled>Previous</button>
+                    <button id="next-response" disabled>Next</button>
+                </div>
+            </div>
+        </section>    
+        
+        <section id="community-blog">
+            <h2>Community Blog</h2>
+            <div class="blog-post">
+                <div class="blog-image">
+                    <img src="blog1.jpeg" alt="Blog Image 1">
+                </div>
+                <div class="blog-content">
+                    <h3>Exploring Nature's Wonders</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel odio in arcu euismod cursus.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </div>
+            <div class="blog-post">
+                <div class="blog-image">
+                    <img src="blog2.jpg" alt="Blog Image 2">
+                </div>
+                <div class="blog-content">
+                    <h3>Delicious Food Adventures</h3>
+                    <p>Curabitur eu ante non ex dictum dapibus eget sed ex. Vestibulum et venenatis odio.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <section id="community-guidelines">
+            <h2>Community Guidelines</h2>
+            <p>
+                We are committed to maintaining a respectful and supportive community. Please follow these guidelines:
+                <!-- Add community guidelines here -->
+            </p>
+            <button id="read-guidelines-button">Read Guidelines</button>
+        </section>
+    </footer>
+
+    <!-- Community Guidelines Modal -->
+    <div id="guidelines-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Community Guidelines</h2>
+            <p>
+                Our commitment at <b>Raksha</b> to provide a secure and compassionate environment for women. These guidelines form the core of our community, emphasizing empathy, respect, and kindness in all interactions. Harassment, discrimination, and bullying are strictly prohibited, fostering a supportive atmosphere. We prioritize privacy and urge users to respect confidentiality. Abuse of any kind is not tolerated, with a zero-tolerance policy. Inclusivity and diversity are celebrated, ensuring everyone feels valued. Compliance with laws and responsible reporting is essential, while authenticity and responsible content sharing maintain a safe space. In emergencies, contact local authorities for assistance. Thank you for being part of our community dedicated to women's safety and empowerment.
+            </p>
+        </div>
+    </div>
+
+    <script src="community.js"></script>
+
+</body>
+</html>

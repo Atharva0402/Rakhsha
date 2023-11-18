@@ -1,0 +1,53 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333; /* Background color of the navbar */
+    padding: 10px 20px; /* Adjust padding as needed */
+}
+
+/* Style the logo */
+.navbar-logo img {
+    max-height: 40px; /* Adjust the logo's height as needed */
+    max-width: 50px;
+}
+
+/* Style the search bar */
+.navbar-search {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-search input[type="text"] {
+    padding: 5px;
+    margin-right: 10px;
+    border: 1px solid #ccc; /* Add a border to the input */
+}
+
+.navbar-search button {
+    background-color: #007bff; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+/* Style the navigation menu */
+.navbar-menu {
+    display: flex;
+    list-style: none;
+}
+
+.navbar-menu li {
+    margin-right: 20px; /* Adjust margin between menu items */
+}
+
+.navbar-menu a {
+    text-decoration: none;
+    color: #fff; /* Link text color */
+    font-weight: bold;
+}
+
+.navbar-menu a:hover {
+    text-decoration: underline; /* Underline on hover */
+}

@@ -1,0 +1,257 @@
+ /* Reset some default styles */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    /* font-family: Arial, sans-serif; */
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+h3{
+    color: black;
+}
+p {
+    display: block;
+    color: black;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+/* Welcome heading styles */
+.welcome-heading {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 28px;
+}
+
+/* Main content container styles */
+.main-content {
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 20px;
+}
+
+/* Left section (User profile) styles */
+.left-section {
+    flex: 1;
+    max-width: 200px;
+    margin-right: 20px;
+}
+
+.user-profile {
+    text-align: center;
+    color: white;
+}
+
+.user-profile img {
+    border-radius: 10%;
+    max-width: 100px;
+    max-height: 100px;
+    margin: 0 auto 10px;
+    display: block;
+    max-width: 125px; 
+    max-height: 167px; 
+}
+
+/* Middle section (Forum members) styles */
+.middle-section {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    margin-left: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.member-list {
+    list-style: none;
+    padding: 0;
+}
+
+.member-list li {
+    display: flex;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    /* image-resolution: 200px 300px; */
+}
+
+.member-list li img {
+    max-width: 125px; /* Set the maximum width */
+    max-height: 125px; /* Set the maximum height */
+    border-radius: 2px solid black;
+}
+
+.member-info {
+    flex: 2;
+    margin-left: 10px;
+}
+
+/* Right section (Chatbot) styles */
+.right-section {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.chatbot {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    height: 400px;
+    overflow-y: scroll;
+}
+
+.chat {
+    overflow-y: auto;
+    height: 80%;
+    padding: 5px;
+}
+
+.user-input {
+    display: flex;
+    margin-top: 10px;
+}
+
+#user-message {
+    flex: 4;
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+
+#send-button {
+    flex: 1;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* Forum posts styles */
+
+.forum-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.forum-post {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    flex: 1;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: calc(33.33% - 20px); /* Distribute them evenly and subtract the gap */
+}
+
+
+/* Post Header */
+.post-header {
+    display: flex;
+    align-items: center;
+}
+
+.post-header img {
+    max-width: 40px;
+    max-height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.post-header h3 {
+    font-size: 18px;
+    color: #007bff;
+}
+
+/* Post Content */
+.post-content h4 {
+    font-size: 20px;
+    color: #333;
+    margin-top: 10px;
+}
+
+.post-content p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Post Comments */
+.post-comments {
+    margin-top: 20px;
+}
+
+.comment {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.comment img {
+    max-width: 30px;
+    max-height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.comment h3 {
+    font-size: 16px;
+    color: #333;
+}
+
+.comment p {
+    font-size: 14px;
+    color: #666;
+}
+/* Style for the "Add Post" button */
+#add-post-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    animation: bounce 1s infinite;
+}
+
+#add-post-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+    animation: none; /* Disable animation on hover */
+}
+
+/* Style for the "Remove Post" button */
+.remove-post-button {
+    background-color: #ff4500;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    animation: spin 2s infinite;
+}
+
+.remove-post-button:hover {
+    background-color: #d13800;
+    transform: scale(1.05);
+    animation: none; /* Disable animation on hover */
+}
+
+
