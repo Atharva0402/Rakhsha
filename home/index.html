@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- <style>
+        .cir_border {
+            padding: 6px 20px;
+            font-weight: bold;
+            border: 2px hidden whitesmoke;
+            border-radius: 20px;
+            margin: 0px -10px;
+        }
+        .cir_border:hover{
+            color: #fc036b
+        }
+    </style> -->
+        <title>Raksha</title>
+
+    </head>
+    <body
+        onload='if (window.location.href.substr(window.location.href.length - 6) == "#about") { introAboutLogoTransition(); }'
+    >
+        <!--navbar-->
+            <!-- Navbar navbar-placeholder -->
+    <!-- <div id="navbar-placeholder"> -->
+    <div id="navbar-placeholder">
+      
+        <!-- <ul class="nav-links"> -->
+            <!-- <div id = "pri"> -->
+            <li>
+                <id="pri" class="active cir_border">Home</a>
+            </li>
+        <!-- </div> -->
+        <!-- </ul> -->
+        
+    </div>
+  
+        <!--navbar-->
+
+        <header id="home">
+            <div class="header-content">
+                <h2 id="quote">Welcome to the safety platform</h2>
+                <div class="line"></div>
+                <h1>Raksha</h1>
+                <a
+                    href="#about"
+                    class="ctn"
+                    onclick='removeall(); $("#quad").css("border", "2px solid whitesmoke"); $("#quad").css("border-radius", "20px");'
+                    >Learn more</a
+                >
+            </div>
+        </header>
+
+        <!--Events-->
+        <section class="events" id="events">
+            <div class="container">
+                <div class="title">
+                    <h1 class="dark">Why Safety?</h1>
+                    <div class="line"></div>
+                </div>
+                <div class="row">
+                    <article class="card col">
+                        <img class="card-img" src="./img/image1.jpg" />
+                        <h4 class="dark">Human Trafficing</h4>
+                        <p class="font-color">
+                            Trafficking awareness is critically important for women as it serves as a shield against the insidious crime of human trafficking.
+                        </p>
+                        <a href="#" class="ctn">All Details</a>
+                    </article>
+                    <article class="card col">
+                        <img src="./img/image2.jpg" />
+                        <h4 class="dark">Cyber Threats</h4>
+                        <p class="font-color">
+                            Cyber awareness is of paramount importance for women, equipping them with the knowledge and skills to navigate the digital landscape safely and securely.
+                        </p>
+                        <a href="#" class="ctn">All Details</a>
+                    </article>
+                    <article class="card col">
+                        <img src="./img/image3.jpg" />
+                        <h4 class="dark">Work Place Safety</h4>
+                        <p class="font-color">
+                            Ensuring workplace safety for women is vital to create an inclusive and secure environment, where women can thrive without fear of harassment or discrimination. 
+                        </p>
+                        <a href="#" class="ctn">All Details</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <!--Events-->
+
+        <!--Explore-->
+        <section class="explore" id="explore">
+            <div class="explore-content">
+                <h1>EXPLORE THE Safety with Raksha</h1>
+                <div class="line"></div>
+                <p>
+                    "Welcome to the Raksha Project, your dedicated safety partner. We redefine protection, inspire confidence, and nurture hope, all while standing as guardians of your security. Safety, innovation, and your well-being are our priorities. Join us in creating a safer, limitless world where dreams thrive."
+                </p>
+                <a href="#" class="ctn">Explore more</a>
+            </div>
+        </section>
+        <!--Explore-->
+
+        <!--tours-->
+        <section class="tours" id="tours">
+            <div class="container row">
+                <div class="col content-col">
+                    <h1 class="font-color">UPCOMING UPDATES IN RAKSHA</h1>
+                    <div class="line"></div>
+                    <p>
+                        Integration with Wearables: <br />
+                        the integration with wearables is a significant development that aims to seamlessly connect our platform with a wide range of wearable devices, including smartwatches, fitness trackers, and other IoT (Internet of Things) devices.<br />
+                        <br />
+                    </p>
+                    <a href="#" class="ctn">Learn more</a>
+                </div>
+                <div class="image-col">
+                    <div class="image-gallery">
+                        <img src="./img/image4.jpg" alt="" />
+                        <img src="./img/image5.jpg" alt="" />
+                        <img src="./img/image6.jpg" alt="" />
+                        <img src="./img/image7.jpg" alt="" />
+                    </div>
+                </div>
+            </div>
+            <br /><br /><br /><br />
+        </section>
+        <!--tours-->
+
+        <!-- About -->
+        <section id="about">
+            <div class="title">
+                <h1 class="font-color">About Us</h1>
+                <div class="line"></div>
+            </div>
+            <br />
+            <div id="about_us">
+                <div class="boxx">
+                    <div class="containerx">
+                        <input type="radio" name="slider" id="item-1" checked />
+                        <input type="radio" name="slider" id="item-2" />
+                        <input type="radio" name="slider" id="item-3" />
+                        <div class="cards">
+                            <label class="cardt" for="item-1" id="col-img-1">
+                                <img src="./img/image8.jpg" />
+                            </label>
+                            <label class="cardt" for="item-2" id="col-img-2">
+                                <img src="./img/image9.jpg" />
+                            </label>
+                            <label class="cardt" for="item-3" id="col-img-3">
+                                <img src="./img/image10.jpg" />
+                            </label>
+                        </div>
+                    </div>
+                    <span id="about-quad"
+                        ><a href="#home"
+                            ><center>
+                                <h1
+                                    style="
+                                        font-family: var(--ff-montserrat);
+                                        color: white;
+                                    "
+                                >
+                                    Find that
+                                </h1>
+                                <br />
+                                <img
+                                    class="img2"
+                                    src="./img/mountain_dark.jpg"
+                                    width="200"
+                                    style="border-radius: 12%"
+                                />
+                                <br />
+                                <h1 class="logo" style="font-size: 50px">
+                                    ADVENTURE
+                                </h1>
+                            </center>
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </section>
+        <!-- About -->
+
+        <!-- up scroll -->
+        <i class="fa fa-chevron-up" onclick="topFunction()" id="upbtn"></i>
+        <!-- end -->
+        <!--footer-->
+        <section class="footer">
+            <span
+                >Created By Team 07 | &#169; 2022 All rights
+                reserved.</span
+            >
+            <div class="social">
+                <li>
+                    <a
+                        href="https://pritam-sarbajna-portfolio.netlify.app/"
+                        target="_blank"
+                        rel="noreferrer"
+                        ><i class="fa fa-globe"></i
+                    ></a>
+                    <a
+                        href="https://github.com/PritamSarbajna"
+                        target="_blank"
+                        rel="noreferrer"
+                        ><i class="fa fa-github"></i
+                    ></a>
+                    <a
+                        href="https://www.linkedin.com/in/pritam-sarbajna-74945821b/"
+                        target="_blank"
+                        rel="noreferrer"
+                        ><i class="fa fa-linkedin-square"></i
+                    ></a>
+                </li>
+            </div>
+        </section>
+        <!--footer-->
+
+        <script>
+            const menuBtn = document.querySelector(".menu-btn");
+            const navlinks = document.querySelector(".nav-links");
+
+            menuBtn.addEventListener("click", () => {
+                navlinks.classList.toggle("mobile-menu");
+            });
+        </script>
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="js/script.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#navbar-placeholder").load("/navbar/navbar.html");
+            });
+        </script>  
+    </body>
+</html>
